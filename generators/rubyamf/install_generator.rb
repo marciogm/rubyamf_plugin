@@ -5,25 +5,25 @@ module Rubyamf
       
       def copy_crossdomain
         if !File.exists?('/public/crossdomain.xml')
-          copy_file "../../rails_installer_files/crossdomain.xml", "config/crossdomain.xml"
+          copy_file "../../rails_installer_files/crossdomain.xml", "./public/crossdomain.xml"
         end
       end
       
       def copy_config
        if !File.exists?('/config/rubyamf_config.rb')
-         copy_file "../../rails_installer_files/rubyamf_config.rb", "config/rubyamf_config.rb"
+         copy_file "../../rails_installer_files/rubyamf_config.rb", "./config/rubyamf_config.rb"
        end
       end
       
       def copy_controller
         if !File.exists?('/controllers/rubyamf_controller.rb')
-          copy_file "../../rails_installer_files/rubyamf_controller.rb", "controllers/rubyamf_controller.rb"
+          copy_file "../../rails_installer_files/rubyamf_controller.rb", "./app/controllers/rubyamf_controller.rb"
         end
       end
       
       def copy_helper
         if !File.exists?('/helpers/rubyamf_helper.rb')
-          copy_file "../../rails_installer_files/rubyamf_helper.rb", "controllers/rubyamf_helper`.rb"
+          copy_file "../../rails_installer_files/rubyamf_helper.rb", "./app/helpers/rubyamf_helper`.rb"
         end
       end
       
